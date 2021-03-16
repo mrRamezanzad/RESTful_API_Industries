@@ -1,0 +1,55 @@
+.body__employee {
+    background-color: #EEEEF1;
+
+    .card {
+        overflow: hidden;
+
+        &__manager-mark {
+            width: 100px;
+            text-align: center;
+            height: auto;
+            color: white;
+            text-shadow: 0 2px 3px black;
+            background-color: slateblue;
+            transform: rotate(-45deg) translate(-28px, -7px);
+
+        }
+
+        &__avatar {
+            object-fit: fill;
+            display: block;
+            width: 60px;
+            height: 60px !important;
+            ;
+        }
+
+        .edit-employee,
+        .delete-employee {
+            cursor: pointer;
+        }
+
+        .edit-employee {
+            &:hover {
+                color: orange;
+            }
+        }
+
+        .delete-employee {
+            &:hover {
+                color: orangered;
+            }
+        }
+    }
+}
+
+// ============== modal styles ================
+.modal--employee{
+    .modal-content{
+
+        background-color: #EEEEF1 !important;
+        color: black;
+    }
+    .modal-body{
+        padding-top: 0 !important;
+    }
+}

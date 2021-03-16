@@ -1,0 +1,49 @@
+<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-5">
+    <div class="card w-100">
+        <div class="card-body">
+
+            <!-- delete button -->
+            <span card-id=<%=company._id %> role="delete-card" id="delete-button" class="
+                rounded-circle">X</span>
+
+            <!-- company's name -->
+            <h5 class="card-title text-center">
+                <%= company.name %>
+            </h5>
+
+            <!-- company detalis -->
+            <p class="card-text">
+                CIN: <strong>
+                    <%= company.cin %>
+                </strong>
+                City: <strong>
+                    <%= company.city %>
+                </Strong>
+            </p>
+            <p class="card-text"> Province: <strong>
+                    <%= company.province %>
+            </p>
+            </Strong>
+            Telephone: <strong>
+                <%= company.telephone %>
+            </Strong>
+
+            <!-- show more informations wrapper -->
+            <div class="d-flex justify-content-between">
+
+                <!-- show employees button -->
+                <a href="/companies/<%= company._id %>/employees" card-id=<%=company._id %> class="btn-more btn btn-dark
+                    mt-3" card-id=<%=company._id %>
+                        class="btn-more btn btn-dark mt-3 ">
+                        employees
+                </a>
+
+                <!-- show more info button -->
+                <a card-id=<%=company._id %> class="btn-more btn btn-dark mt-3 "
+                    data-bs-toggle="modal"data-bs-target="#more-info-modal">More
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>

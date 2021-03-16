@@ -1,0 +1,48 @@
+<div class="card col-11 col-md-8  mb-2 px-3 py-2 position-relative">
+
+    <% if(employee.manager === true) { %> 
+        
+        <!-- manager mark -->
+        <div class="card__manager-mark position-absolute top-0 start-0 d-inline col-md-1">manager</div>
+    <% } %> 
+    
+    <div class="row align-items-center  ">
+
+        <!-- avatar -->
+        <div class="col-12 col-md-3  d-flex d-md-block justify-content-center  avatar"><img class="card__avatar ms-md-4  d-block rounded rounded-circle"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEZrATmgHOi5ls0YCCQBTkocia_atSw0X-Q&usqp=CAU"
+                alt="avatar"></div>
+
+        <!-- section  -->
+        <div class="col-6 col-md-3 ">
+            <!-- full name -->
+            <p class="fw-bold text-center"><%= employee.firstName + " " + employee.lastName %> </p>
+
+            <!-- birthday -->
+            <p class="text-muted text-center">birthday: 
+                <% let birthday = new Date(employee.birthday) %>
+                <%= birthday.getFullYear()%> 
+            </p>
+        </div>
+
+        <!-- section  -->
+        <div class="col-6 col-md-3">
+            <!-- gender -->
+            <p class="fw-bold text-center"><%= employee.gender %> </p>
+
+            <!-- company -->
+            <p class="text-muted text-center">company: <%= employee.company.name %> </p>
+        </div>
+
+        <!-- edit section  -->
+        <div class="col-12 col-md-3 text-center">
+
+            <!-- edit button -->
+            <icon card-id="<%= employee._id %>" class="edit-employee bi bi-pencil p-2 fs-4 border-end"></icon>
+
+            <!-- delete button -->
+            <icon card-id="<%= employee._id %>" class="delete-employee bi bi-trash2 p-2 fs-4"></icon>
+
+        </div>
+    </div>
+</div>

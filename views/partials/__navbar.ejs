@@ -1,0 +1,39 @@
+<!-- navbar -->
+<nav class="navbar navbar-light bg-white sticky-top navbar-expand-lg  
+     mb-5">
+    <div class="container-fluid">
+
+        <!-- logo -->
+        <a class="navbar-brand" href="/">Industrial Companies</a>
+
+        <!-- toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- menu content -->
+        <div class="collapse navbar-collapse d-lg-flex flex-lg-row-reverse me-3" id="navbarNav">
+            <ul class="navbar-nav d-lg-flex- flex-lg-row-reverse">
+                <li class="nav-item">
+                    <a class="nav-link <%if(page === "home"){%> active <%}%>" aria-current="page" href="/">خانه</a>
+                    <span class="bi bi-house-fill d-inline-block"></span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <%if(page === "company"){%> active <%}%>" href="/companies/">شرکت ها</a>
+                    <span class="bi bi-building d-inline-block"></span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <%if(page === "employee"){%> active <%}%>" href="/employees/">کارمندان</a>
+                    <span class="bi bi-person d-inline-block "></span>
+                </li>
+            </ul>
+
+            <!-- search bar -->
+            <div class="search-bar w-50 mx-auto">
+                <input class="text-end  w-100 border-0  shadow py-2" type="search"
+                    placeholder="با کلید / شروع به سرچ کنید " aria-label="Search">
+            </div>
+        </div>
+    </div>
+</nav>

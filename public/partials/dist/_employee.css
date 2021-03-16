@@ -1,0 +1,39 @@
+.body__employee {
+  background-color: #EEEEF1;
+}
+.body__employee .card {
+  overflow: hidden;
+}
+.body__employee .card__manager-mark {
+  width: 100px;
+  text-align: center;
+  height: auto;
+  color: white;
+  text-shadow: 0 2px 3px black;
+  background-color: slateblue;
+  transform: rotate(-45deg) translate(-28px, -7px);
+}
+.body__employee .card__avatar {
+  object-fit: fill;
+  display: block;
+  width: 60px;
+  height: 60px !important;
+}
+.body__employee .card .edit-employee,
+.body__employee .card .delete-employee {
+  cursor: pointer;
+}
+.body__employee .card .edit-employee:hover {
+  color: orange;
+}
+.body__employee .card .delete-employee:hover {
+  color: orangered;
+}
+
+.modal--employee .modal-content {
+  background-color: #EEEEF1 !important;
+  color: black;
+}
+.modal--employee .modal-body {
+  padding-top: 0 !important;
+}

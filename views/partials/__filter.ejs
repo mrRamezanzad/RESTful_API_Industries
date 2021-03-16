@@ -1,0 +1,25 @@
+<div class="container w-5">
+
+    <!-- filter button -->
+    <button class="btn btn-dark " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+        aria-expanded="false" aria-controls="collapseExample">
+        Filter
+    </button>
+
+    <!-- collapse section -->
+    <div class="collapse  col-md-6 " id="collapseExample">
+
+        <!-- time range selection form -->
+        <form id="filter" action="" class="row g-3 needs-validation card card-body mt-2">
+            <div class="col-md-12">
+                <label class="form-label" for="startDate">تاریخ شروع</label>
+                <input class="form-control" type="date" name="startDate">
+                <label class="form-label" for="endDate">تاریخ پایان</label>
+                <input class="form-control" type="date" name="endDate">
+            </div>
+            <div class="col-12">
+                <button id="filter__apply-button" class="btn btn-primary" type="submit">اجرای تغییرات</button>
+            </div>
+        </form>
+    </div>
+</div>

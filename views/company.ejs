@@ -1,0 +1,41 @@
+<!-- HTML header -->
+<%- include("./partials/__header") %>
+
+<!-- navbar component -->
+<%- include('./partials/__navbar', {page: "company"}) %> 
+
+    <!--  alert component -->
+    <%- include("./partials/__alert") %>
+
+    <div class="container text-capitalize">
+        <div class="row justify-content-center align-items-center ">
+
+            <!--  filter component -->
+            <%- include("./partials/__filter") %>
+
+            <div id="new-button" class="btn fs-1 text-right w-5" data-bs-toggle="modal"
+            data-bs-target="#more-info-modal">
+            &plus;
+        </div>
+    </div>
+    
+    <main class="row gx-sm-3 gx-md-5">
+
+            <!-- card component -->
+            <% companies.forEach(company=> {%>
+                <%- include("./partials/__card--company", {company}) %>
+            <% }) %>
+    </main>
+
+    <!-- modal component -->
+    <%- include("./partials/__modal--company") %>
+
+    </div>
+
+<!-- loading scripts -->
+<%- include("./partials/__scripts")  %> 
+<script src="/js/main.js"></script>
+<script src="/js/company.js"></script>
+
+<!-- importing HTML footer  -->
+<%- include("./partials/__footer") %>

@@ -1,0 +1,21 @@
+{
+  "name": "restful_api_industries",
+  "version": "0.0.0",
+  "author": "mrRamezanzad",
+  "private": true,
+  "description": "a RESTful API that can do crud on companies and it's employees in extra it give some specific queries too.",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-flash-messages": "^0.1.1",
+    "express-session": "^1.17.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.11.18",
+    "morgan": "~1.9.1"
+  }
+}

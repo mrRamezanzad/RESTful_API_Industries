@@ -1,0 +1,141 @@
+
+#new-button {
+    color: #74654B !important;
+
+    &:hover {
+        color: black !important;
+    }
+}
+
+// ================ card styles
+main .card {
+    // width: 90%;
+    border-radius: 10px;
+
+    p {
+        margin-bottom: .3rem;
+    }
+
+    img {
+        border-radius: 10px 10px 0 0;
+        height: 250px !important;
+    }
+
+    .btn-more {
+        width: 45%;
+        border-radius: 8px;
+        display: block;
+        background: #74654B !important;
+
+        &:hover {
+            color: #968561 !important;
+            text-shadow: 0 2px 1px #968561;
+            font-weight: 500;
+            background-color: white !important;
+        }
+    }
+
+    #delete-button {
+        color: red;
+
+        &:hover {
+            color: orange;
+            text-shadow: 0 1px 3px red;
+            cursor: pointer;
+        }
+    }
+}
+
+.product-page-wrapper {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+// ============== modal styles
+.modal {
+    border-radius: 10px;
+
+    .card {
+        img {
+            background-size: cover;
+            // width: 100% !important;
+            // height: 250px !important;
+            border-radius: 5px;
+        }
+
+        span {
+            font-weight: 300;
+            color: whitesmoke;
+        }
+    }
+}
+
+.modal-header {
+    padding-bottom: 0;
+}
+
+.modal-content {
+    background: #74654B;
+    color: white;
+
+    div {
+        border: none;
+    }
+
+    #delete-button,
+    .modal-header button {
+        color: red !important;
+
+        &:hover {
+            color: orange !important;
+            text-shadow: 0px 0px 8px red !important;
+        }
+    }
+
+    #save-button,
+    #update-button,
+    #cancel-button {
+        color: white !important;
+
+        &:hover {
+            color: black !important;
+        }
+    }
+
+    // #save-button {
+    //     &:hover {
+    //         color: white !important;
+    //     }
+    // }
+
+    // #update-button {
+    //     &:hover {
+    //         color: white !important;
+    //     }
+    // }
+    #cancel-button {
+        &:hover {
+            color: white !important;
+        }
+    }
+}
+
+
+#delete-user[data-bs-dismiss=modal] {
+
+    color: black !important;
+
+    &:hover {
+
+        color: black !important;
+    }
+}
+
+// ========================= alert =====================
+.alert {
+    z-index: 1080;
+}

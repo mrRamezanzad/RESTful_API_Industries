@@ -1,0 +1,32 @@
+<!-- HTML header -->
+<%- include('./partials/__header') %> 
+
+<!-- navbar component -->
+<%- include('./partials/__navbar', {page: "404"}) %> 
+
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 74vh;
+        text-align: center;
+
+    }
+    h1{
+        color: slategrey;
+        font-weight: 100;
+        font-family: segoe ui;
+        font-size: 6rem;
+        text-shadow: 0 0 10px orange;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>404 Page Not Found</h1>
+    </div>
+</body>
+
+</html>

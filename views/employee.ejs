@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+    <link rel="favorite icon" href="https://cdn.iconscout.com/icon/premium/png-64-thumb/company-2819606-2341242.png"
+        type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="/dist/style.css">
+
+</head>
+<body class="body__employee">
+    
+<!-- navbar component -->
+<%- include('./partials/__navbar', {page: "employee"}) %> 
+
+
+    <div class="container text-capitalize">
+        <div class="row justify-content-center align-items-center ">
+
+           <!-- add new card button -->
+            <div id="new-button" class="btn fs-1 text-right w-5" data-bs-toggle="modal"
+                data-bs-target="#more-info-modal">
+                &plus;
+            </div>
+
+        </div>
+        
+        <!-- main section of page -->
+        <main class="row justify-content-center gx-sm-3 gx-md-5">
+
+            <!-- card rendering -->
+            <% employees.forEach(employee => {%>
+                <%- include("./partials/__card--employee", {employee}) %> 
+            <% }) %> 
+            
+        </main>
+
+        <!-- modal -->
+        <%- include("./partials/__modal--employee") %>             
+    </div>
+
+    <!-- loading scripts -->
+    <%- include("./partials/__scripts") %>
+    <script src="/js/main.js"></script>
+    <script src="/js/employee.js"></script>
+
+<!-- HTML footer -->
+<%- include("./partials/__footer") %>
